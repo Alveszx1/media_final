@@ -52,7 +52,7 @@ public class ResultadoFinal {
         }else if (mediaFinalAluno < 3) {
             aprovadoReprovado = "Reprovado";
         }else {
-            aprovadoReprovado = "Recuperação";
+            aprovadoReprovado = "de Recuperação";
         }
         exibirResultados();
     }
