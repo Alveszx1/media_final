@@ -49,8 +49,10 @@ public class ResultadoFinal {
     public void determinarSituacao(){
         if (mediaFinalAluno >= 5){
             aprovadoReprovado = "Aprovado";
-        }else{
+        }else if (mediaFinalAluno < 3) {
             aprovadoReprovado = "Reprovado";
+        }else {
+            aprovadoReprovado = "Recuperação";
         }
         exibirResultados();
     }
