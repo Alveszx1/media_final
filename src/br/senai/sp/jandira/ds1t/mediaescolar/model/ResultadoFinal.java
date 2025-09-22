@@ -44,10 +44,19 @@ public class ResultadoFinal {
         }else{
             aprovadoReprovado = "Reprovado";
         }
+        determinarSituacao();
+    }
+    public void determinarSituacao(){
+        if (mediaFinalAluno >= 5){
+            aprovadoReprovado = "Aprovado";
+        }else{
+            aprovadoReprovado = "Reprovado";
+        }
         exibirResultados();
     }
+
     public void exibirResultados(){
         System.out.println("Média do aluno: "+mediaFinalAluno);
-        System.out.print("Resultado: O(a) aluno(a) "+nomeAluno+ " esta "+aprovadoReprovado);
+        System.out.print("Resultado: O(a) aluno(a) "+nomeAluno+ " esta "+aprovadoReprovado+" !");
     }
 }
